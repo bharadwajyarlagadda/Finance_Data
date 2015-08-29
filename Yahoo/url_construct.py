@@ -4,13 +4,13 @@ from bs4 import BeautifulSoup
 import urllib.request
 import socket
 
-url = "http://finance.yahoo.com/"
 
 class yahoo_Url_Construct:
 
-    def __init__(self):
+    def __init__(self, url):
         self.connection_timeout = 10
         self.stock_symbols_summary_urls = {}
+        self.home_url = url
         self.html_content = ''
         self.nasdaq_url = ''
         self.nasdaq_url_content = ''
@@ -29,10 +29,10 @@ class yahoo_Url_Construct:
         socket.setdefaulttimeout(self.connection_timeout)
 
     def main_url_content(self):
-        self.html_content = BeautifulSoup(urllib.request.urlopen(url).read().decode('utf8'))
+        self.html_content = BeautifulSoup(urllib.request.urlopen(self.home_url).read().decode('utf8'))
 
     def nasdaq_url_construct(self):
-        self.nasdaq_url = url + self.html_content.find("a", {"title": "NASDAQ Composite"})['href'].replace('/', '')
+        self.nasdaq_url = self.home_url + self.html_content.find("a", {"title": "NASDAQ Composite"})['href'].replace('/', '')
         self.html_content = ''
 
     def nasdaq_url_contents(self):
@@ -44,4 +44,4 @@ class yahoo_Url_Construct:
 
     def stock_symbols_urls_dict(self):
         for anchor_tags in self.stock_symbols:
-            self.stock_symbols_summary_urls[anchor_tags.find("a").text] = url + anchor_tags.find("a")['href']
+            self.stock_symbols_summary_urls[anchor_tags.find("a").text] = self.home_url + anchor_tags.find("a")['href']
