@@ -1,7 +1,7 @@
-<b>Description:</b> This project is concentrated on retrieving the necessary data(from STOCK symbols) from NASDAQ<br/>
+<b>Description:</b> This project is concentrated on retrieving the necessary data(from STOCK symbols) from NASDAQ<br/><br/>
 
 
-<b>URL:</b> http://finance.yahoo.com/<br/>
+<b>URL:</b> http://finance.yahoo.com/<br/><br/>
 
 
 <b>Execution Command:</b> --> python main.py<br/>
