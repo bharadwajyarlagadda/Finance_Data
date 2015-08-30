@@ -2,6 +2,11 @@
 
 <b>URL:</b> http://finance.yahoo.com/
 
+<b>Execution:</b>
+<b>Command</b> --> python main.py<br/>
+<b>Input</b> --> http://finance.yahoo.com/ (Input is hard-coded inside main.py. Only one url is used in the entire package)<br/>
+<b>Output</b> --> csv files containing summary, calls and puts content. <br/>
+
 <b>About the Package:</b> <br />
 1) Only one url is taken which is the main url mentioned above (http://finance.yahoo.com/) <br />
 2) Based on the main url it constructs the url of NASDAQ (http://finance.yahoo.com/q?s=^ixic) <br />
@@ -17,3 +22,4 @@
 --> <b>Yahoo/get_calls_and_puts.py</b> - This class helps in retrieving the calls and puts from the url which we get from calls_and_puts_url_construct class. <br/>
 --> <b>Yahoo/stock_symbol_summary.py</b> - This class helps in retrieving the summary content from the url which we get from url_construct class. <br/>
 --> <b>Yahoo/url_construct.py</b> - This class helps in constructing the NASDAQ url and also the stock symbols urls. <br/>
+--> Memory management is done in the entire package. <br/>
