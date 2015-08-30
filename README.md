@@ -1,11 +1,13 @@
 <b>Description:</b> This project is concentrated on retrieving the necessary data(from STOCK symbols) from NASDAQ
 
+
 <b>URL:</b> http://finance.yahoo.com/
 
-<b>Execution:</b>
-<b>Command</b> --> python main.py<br/>
+
+<b>Execution Command:</b> --> python main.py<br/>
 <b>Input</b> --> http://finance.yahoo.com/ (Input is hard-coded inside main.py. Only one url is used in the entire package)<br/>
 <b>Output</b> --> csv files containing summary, calls and puts content. <br/>
+
 
 <b>About the Package:</b> <br />
 1) Only one url is taken which is the main url mentioned above (http://finance.yahoo.com/) <br />
@@ -15,6 +17,7 @@
 5) Once the stock symbol url is retrieved, respective summary content (Prev Close, Open, Bid, Ask, etc.) is retrieved from the page using BeautifulSoup package.<br />
 6) Once the summary content is retrieved, it then builds the url for calls and puts (Ex: http://finance.yahoo.com/q/op?s=ARIA+Options)<br />
 7) From the calls and puts page - it retrieves all the calls and puts (Contract Name, Last, Bid, Ask, etc.) details on that particular day<br />
+
 
 --> <b>Yahoo/main.py</b> - Main execution file. It takes only one url which is http://finance.yahoo.com/. <br/>
 --> <b>Yahoo/calls_and_puts_url_construct.py</b> - This class helps in constructing calls and puts url. <br/>
