@@ -28,8 +28,7 @@ class get_calls_and_puts:
         self.get_column_names()
         self.puts_headers, self.puts_rows_data = self.get_rows_data()
         self.clear_values()
-        print(self.calls_headers, self.calls_rows_data)
-        print(self.puts_headers, self.puts_rows_data)
+        return self.stock_symbol, self.calls_headers, self.calls_rows_data, self.puts_headers, self.puts_rows_data
 
     def get_options_content(self):
         self.html_content = BeautifulSoup(urllib.request.urlopen(self.calls_options_url).read().decode('utf8'))
