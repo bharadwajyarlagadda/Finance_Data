@@ -41,11 +41,9 @@ class get_calls:
     def get_rows_data(self):
         tbody_tag = self.calls_div_tag.find("tbody")
         rows = tbody_tag.find_all("tr")
-        print(len(rows))
         for row in rows:
             td_tags = row.find_all("td")
             for td_tag in td_tags:
                 self.row_data.append(td_tag.text.strip('\n'))
             self.all_rows_data.append(self.row_data)
             self.row_data = []
-        print(self.all_rows_data)
