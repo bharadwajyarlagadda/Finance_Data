@@ -1,5 +1,11 @@
 __author__ = 'Bharadwaj'
 
+# This is the main class for execution
+# Input: Main url (http://finance.yahoo.com/)
+# Output: 1) Yahoo_Data/Yahoo_NASDAQ_Stock_Summary folder - Stock Summary csv files
+#         2) Yahoo_Data/Yahoo_NASDAQ_Stock_Calls folder - Stock Calls csv files
+#         3) Yahoo_Data/Yahoo_NASDAQ_Stock_Puts folder - Stock Puts csv files
+
 from Yahoo import UrlConstruct
 from Yahoo import StockSymbolSummary
 from Yahoo import CreateCsv
