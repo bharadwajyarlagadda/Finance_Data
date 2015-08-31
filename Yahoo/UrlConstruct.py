@@ -1,5 +1,10 @@
 __author__ = 'Bharadwaj'
 
+# This class helps in constructing the NASDAQ url from the main url and
+# also retrieves the stock symbols and their respective urls.
+# Input: Main url (http://finance.yahoo.com/)
+# Output: Dictionary of stock symbols and their respective urls.
+
 from bs4 import BeautifulSoup
 import urllib.request
 import socket
