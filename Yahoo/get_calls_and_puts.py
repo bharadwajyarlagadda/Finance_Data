@@ -63,6 +63,8 @@ class get_calls_and_puts:
         return self.headers, self.all_rows_data
 
     def clear_values(self):
+        self.html_content = ''
+        self.calls_div_tag = ''
         self.headers = []
         self.row_data = []
         self.all_rows_data = []

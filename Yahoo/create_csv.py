@@ -1,5 +1,12 @@
 __author__ = 'Bharadwaj'
 
+# This class helps in creating csv files for the respective stock symbols
+# and write the relevant data (summary, calls, puts) to the files.
+# Input - Stock symbol, Summary, Calls - table headers, Calls - table data
+#         Puts - table headers, Puts - table data
+# Output - csv files with the respective data. csv files are created in the
+#          format "stock_symbol-today_date-summary"
+
 import csv
 import time
 
@@ -20,6 +27,8 @@ class create_csv:
     def execute(self):
         self.create_csv()
 
+    # create_csv - Input - strings(summary, calls, puts)
+    #              Passes the file name to write_to_csv
     def create_csv(self):
         today_date = time.strftime("%Y%m%d")
         if self.stock_symbol and self.summary_values:
@@ -33,6 +42,9 @@ class create_csv:
         else:
             pass
 
+    # write_to_csv - Input - file_name
+    #                Creates the csv files respectively
+    #                Writes all the respective data to the files
     def write_to_csv(self, file_name):
         file_write = open(file_name+".csv", 'w')
         csv_writer = csv.writer(file_write, lineterminator="\n")
