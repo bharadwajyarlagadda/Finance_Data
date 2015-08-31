@@ -1,8 +1,10 @@
 <b>Description:</b> This project is concentrated on retrieving the necessary data(from STOCK symbols) from NASDAQ<br/><br/>
 
 
-<b>URL:</b> http://finance.yahoo.com/<br/><br/>
+<b>URL:</b> http://finance.yahoo.com/<br/>
 
+<b>Python Version</b> - Python 3.4<br/>
+<b>Packages Used</b> - BeautifulSoup, socket, urllib.request, os, time<br/>
 
 <b>Execution Command:</b> --> python main.py<br/>
 <b>Input</b> --> http://finance.yahoo.com/ (Input is hard-coded inside main.py. Only one url is used in the entire package)<br/>
