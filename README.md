@@ -6,7 +6,8 @@
 
 <b>Execution Command:</b> --> python main.py<br/>
 <b>Input</b> --> http://finance.yahoo.com/ (Input is hard-coded inside main.py. Only one url is used in the entire package)<br/>
-<b>Output</b> --> csv files containing summary, calls and puts content. <br/><br/>
+<b>Output</b> --> csv files containing summary, calls and puts content. All files are placed in <b>Yahoo_Data</b> directory <br/>
+If you need to check the output of the package delete the output directory "Yahoo_Data" and then execute. <br/><br/>
 
 
 <b>About the Package:</b> <br />
