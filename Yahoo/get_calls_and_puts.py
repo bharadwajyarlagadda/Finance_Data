@@ -4,12 +4,14 @@ __author__ = 'Bharadwaj'
 # headers and all the row data.
 # Input - 1) Stock symbol
 #         2) The url which consists of calls and puts data
-# Output - This class returns stock symbol, calls and puts headers
-#          and all their respective row data
+# Output - 1) stock symbol
+#          2) calls and puts headers
+#          3) calls and puts row data
 
 from bs4 import BeautifulSoup
 import urllib.request
 import socket
+
 
 class get_calls_and_puts:
     def __init__(self, stock_symbol, calls_options_url):

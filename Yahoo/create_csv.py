@@ -2,13 +2,18 @@ __author__ = 'Bharadwaj'
 
 # This class helps in creating csv files for the respective stock symbols
 # and write the relevant data (summary, calls, puts) to the files.
-# Input - Stock symbol, Summary, Calls - table headers, Calls - table data
-#         Puts - table headers, Puts - table data
+# Input - 1) Stock symbol
+#         2) Summary
+#         3) Calls - table headers
+#         4) Calls - table data
+#         5) Puts - table headers
+#         6) Puts - table data
 # Output - csv files with the respective data. csv files are created in the
 #          format "stock_symbol-today_date-summary"
 
 import csv
 import time
+
 
 class create_csv:
     def __init__(self, stock_symbol, summary_values, calls_headers, calls_row_data, puts_headers, puts_row_data):
