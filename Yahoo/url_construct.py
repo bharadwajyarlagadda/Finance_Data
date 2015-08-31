@@ -5,8 +5,7 @@ import urllib.request
 import socket
 
 
-class yahoo_Url_Construct:
-
+class Url_Construct:
     def __init__(self, url):
         self.connection_timeout = 10
         self.stock_symbols_summary_urls = {}

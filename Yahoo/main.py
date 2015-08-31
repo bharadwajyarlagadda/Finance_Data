@@ -24,7 +24,7 @@ class Main:
         self.get_calls_and_puts()
 
     def stock_sym_summary_urls(self):
-        yahoo_url_construct = url_construct.yahoo_Url_Construct(self.finance_url)
+        yahoo_url_construct = url_construct.Url_Construct(self.finance_url)
         self.stock_symbols_summary_urls = yahoo_url_construct.execute()
 
     def stock_sym_summary(self):

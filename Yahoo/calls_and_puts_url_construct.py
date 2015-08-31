@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 import urllib.request
 
 class calls_and_puts_url_construct:
-
     def __init__(self, stock_symbol, stock_url, url):
         self.connection_timeout = 10
         self.stock_symbol = stock_symbol

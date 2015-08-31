@@ -11,7 +11,6 @@ import csv
 import time
 
 class create_csv:
-
     def __init__(self, stock_symbol, summary_values, calls_headers, calls_row_data, puts_headers, puts_row_data):
         self.stock_symbol = stock_symbol
         self.summary_values = summary_values

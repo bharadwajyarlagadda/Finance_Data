@@ -5,7 +5,6 @@ import urllib.request
 import socket
 
 class stock_symbol_summary:
-
     def __init__(self, stock_symbol, stock_symbol_summary_url):
         self.connection_timeout = 10
         self.stock_symbol = stock_symbol
